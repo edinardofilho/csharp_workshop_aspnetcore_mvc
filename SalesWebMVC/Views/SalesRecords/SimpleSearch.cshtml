@@ -30,7 +30,7 @@
     <div class="panel-body">
         <table class="table table-striped table-hover">
             <thead>
-                <tr class="success">
+                <tr class="warning">
                     <th>
                         @Html.DisplayNameFor(model => model.Id)
                     </th>
@@ -78,4 +78,7 @@
             </tbody>
         </table>
     </div>
-</div> 
+</div>
+<form asp-action="SimpleSearch">
+    <a asp-action="Index" class="btn btn-default">Back to Search</a>
+</form> 
